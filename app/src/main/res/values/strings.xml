@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">UAS_PemrogSeluler_42430007_Gabriel</string>
-    <string name="hint_search">Cari laptop Lenovo...</string>
+    <string name="hint_search">Cari laptop Lenovo&#8230;</string>
     <string name="btn_search">Cari</string>
     <string name="btn_sort">Urutkan Harga (Termurah)</string>
     <string name="tv_result">Katalog akan muncul di sini</string>
+    <string name="desc_laptop_image">Gambar Laptop</string>
+    <string name="detail_harga">Harga: Rp %1$d</string>
 </resources>
