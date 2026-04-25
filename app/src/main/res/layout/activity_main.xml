@@ -11,7 +11,7 @@
         android:id="@+id/ivBanner"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/Lenovo"
+        android:src="@drawable/lenovo"
         android:scaleType="centerInside"
         android:contentDescription="@string/content_desc_lenovo_logo"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,6 +31,7 @@
         android:background="@drawable/bg_search_input"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:paddingHorizontal="12dp"
         app:layout_constraintEnd_toStartOf="@+id/btnSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivBanner" />
@@ -56,21 +57,14 @@
         android:textColor="@color/primary_red"
         app:layout_constraintTop_toBottomOf="@id/etSearch" />
 
-    <ScrollView
+    <ListView
+        android:id="@+id/lvKatalog"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnSort">
-
-        <TextView
-            android:id="@+id/tvResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tv_result"
-            android:textColor="@color/accent_gray"
-            android:textSize="14sp"
-            android:lineSpacingExtra="4dp" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@id/btnSort" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
