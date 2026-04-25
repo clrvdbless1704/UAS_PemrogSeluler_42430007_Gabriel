@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.text.NumberFormat
+import java.util.*
 
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +24,10 @@ class DetailActivity : AppCompatActivity() {
 
         ivFoto.setImageResource(foto)
         tvNama.text = nama
-        tvHarga.text = getString(R.string.detail_harga, harga)
         tvDesc.text = desc
+
+        val localeID = Locale.Builder().setLanguage("in").setRegion("ID").build()
+        val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
+        tvHarga.text = formatRupiah.format(harga)
     }
 }

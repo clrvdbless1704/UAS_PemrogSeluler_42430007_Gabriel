@@ -4,7 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_black"
     android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/Lenovo"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/content_desc_lenovo_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/etSearch"
@@ -12,47 +24,53 @@
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:hint="@string/hint_search"
+        android:textColorHint="@color/accent_gray"
+        android:textColor="@color/text_white"
         android:inputType="text"
-        android:importantForAutofill="no"
+        android:autofillHints="none"
+        android:background="@drawable/bg_search_input"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintWidth_max="488dp"
         app:layout_constraintEnd_toStartOf="@+id/btnSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/ivBanner" />
 
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
         android:text="@string/btn_search"
+        android:backgroundTint="@color/primary_red"
+        android:textColor="@color/text_white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etSearch"
         app:layout_constraintBottom_toBottomOf="@id/etSearch"/>
 
     <Button
         android:id="@+id/btnSort"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_marginTop="8dp"
-        android:paddingStart="24dp"
-        android:paddingEnd="24dp"
+        android:layout_marginTop="12dp"
         android:text="@string/btn_sort"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/card_dark"
+        android:textColor="@color/primary_red"
         app:layout_constraintTop_toBottomOf="@id/etSearch" />
 
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="0dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:text="@string/tv_result"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnSort" />
+        app:layout_constraintTop_toBottomOf="@id/btnSort">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_result"
+            android:textColor="@color/accent_gray"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
