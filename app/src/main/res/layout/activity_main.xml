@@ -4,66 +4,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_black"
-    android:padding="16dp">
+    android:background="@color/bg_black">
 
     <ImageView
         android:id="@+id/ivBanner"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/lenovo"
         android:scaleType="centerInside"
         android:contentDescription="@string/content_desc_lenovo_logo"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etSearch"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/searchArea"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:hint="@string/hint_search"
-        android:textColorHint="@color/accent_gray"
-        android:textColor="@color/text_white"
-        android:inputType="text"
-        android:autofillHints="none"
-        android:background="@drawable/bg_search_input"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:paddingHorizontal="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBanner" />
+        app:layout_constraintTop_toBottomOf="@id/ivBanner">
 
-    <Button
-        android:id="@+id/btnSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_search"
-        android:backgroundTint="@color/primary_red"
-        android:textColor="@color/text_white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/etSearch"
-        app:layout_constraintBottom_toBottomOf="@id/etSearch"/>
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_search"
+            android:textColorHint="@color/accent_gray"
+            android:textColor="@color/text_white"
+            android:paddingHorizontal="16dp"
+            android:inputType="text"
+            android:autofillHints="none"
+            android:background="@drawable/bg_search_input" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_search_input"
+            android:backgroundTint="@color/primary_red"
+            android:src="@android:drawable/ic_menu_search"
+            android:contentDescription="@string/btn_search"
+            app:tint="@color/text_white" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnSort"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/btn_sort"
+        android:textSize="11sp"
         android:backgroundTint="@color/card_dark"
         android:textColor="@color/primary_red"
-        app:layout_constraintTop_toBottomOf="@id/etSearch" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchArea" />
 
-    <ListView
-        android:id="@+id/lvKatalog"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKatalog"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="12dp"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="8dp"
+        android:paddingHorizontal="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSort" />
 

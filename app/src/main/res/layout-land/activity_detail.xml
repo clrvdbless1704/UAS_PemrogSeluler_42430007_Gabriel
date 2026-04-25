@@ -1,50 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_black">
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineVertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.45" />
+    android:background="@color/bg_black"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
 
     <ImageView
         android:id="@+id/ivDetailFoto"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:background="@color/card_dark"
-        android:padding="24dp"
+        android:padding="32dp"
         android:scaleType="centerInside"
-        android:contentDescription="@string/desc_laptop_image"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:contentDescription="@string/desc_laptop_image" />
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guidelineVertical"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <TextView
                 android:id="@+id/tvDetailNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/primary_red"
+                android:textColor="@color/text_white"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -52,28 +39,34 @@
                 android:id="@+id/tvDetailHarga"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/text_white"
-                android:textSize="20sp"
+                android:textColor="@color/primary_red"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="16dp"
-                android:alpha="0.2"
-                android:background="@color/accent_gray" />
+                android:layout_marginVertical="12dp"
+                android:background="#33FFFFFF" />
+
+            <TextView android:id="@+id/tvDetailProc" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_white" android:textSize="13sp" />
+            <TextView android:id="@+id/tvDetailRam" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_white" android:textSize="13sp" />
+            <TextView android:id="@+id/tvDetailStorage" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_white" android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/title_description"
+                android:textColor="@color/accent_gray"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvDetailDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:lineSpacingExtra="4dp"
-                android:textColor="@color/accent_gray"
+                android:textColor="@color/text_white"
                 android:textSize="14sp" />
-
         </LinearLayout>
     </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

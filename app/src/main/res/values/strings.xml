@@ -5,8 +5,16 @@
     <string name="btn_sort">Urutkan A-Z</string>
     <string name="tv_result">Katalog akan muncul di sini&#8230;</string>
     <string name="desc_laptop_image">Gambar Laptop</string>
-    <string name="detail_harga">Harga: Rp %1$d</string>
+    <string name="detail_harga">Harga: %1$s</string>
     <string name="content_desc_lenovo_logo">Lenovo Logo</string>
     <string name="hint_search_short">Cari&#8230;</string>
     <string name="btn_sort_land">SORT A-Z</string>
+    <string name="title_description">Deskripsi Produk</string>
+    <string name="spec_processor">Processor: %1$s</string>
+    <string name="spec_ram">RAM: %1$s</string>
+    <string name="spec_storage">Storage: %1$s</string>
+    <string name="spec_graphics">Graphics: %1$s</string>
+    <string name="spec_display">Display: %1$s</string>
+    <string name="label_description">Deskripsi:</string>
+    <string name="hint_search_simple">Cari Laptop&#8230;</string>
 </resources>
