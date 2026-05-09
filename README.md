@@ -45,8 +45,8 @@ Berikut adalah dokumentasi hasil pengujian aplikasi:
 
 ### 3. Halaman Detail Laptop
 
-| Detail Laptop |
-| :---: |
+| Detail Laptop | Detail Laptop Landscape |
+| :---: | :---: |
 | ![Detail](images/portrait_detail.jpeg) | ![Landscape](images/landscape_detail.jpeg) |
 
 ---
