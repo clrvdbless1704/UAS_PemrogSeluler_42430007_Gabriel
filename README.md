@@ -1,67 +1,94 @@
-# 📱 Project Aplikasi Android
+# UAS Pemrograman Seluler - Katalog Laptop Lenovo
 
-## 👤 Identitas Mahasiswa
-- **Nama Lengkap:** [Gabriel Jehuda Tamedo]
-- **NIM:** [42430007]
-
----
-
-## 📌 Topik Aplikasi
-Aplikasi ini merupakan aplikasi Android yang dibuat menggunakan Kotlin di Android Studio dengan fitur utama menampilkan data, melakukan pencarian, serta pengurutan data.
-
-Contoh topik:
-> Aplikasi Katalog Laptop Lenovo berbasis Android.
+## Informasi Mahasiswa
+- **Nama:** Gabriel
+- **NIM:** 42430007
 
 ---
 
-# 📷 Screenshot Aplikasi
+## Topik Aplikasi
+Aplikasi **Katalog Laptop Lenovo** adalah aplikasi Android sederhana yang memungkinkan pengguna untuk:
 
-## Tampilan Portrait Main
-![Portrait](images/portrait.jpeg)
-
----
-
-## Tampilan Landscape Main
-![Landscape](images/landscape.jpeg)
-
----
-
-## Tampilan Portrait Detail
-![Portrait](images/portrait_detail.jpeg)
-
----
-
-## Tampilan Landscape Detail
-![Landscape](images/landscape_detail.jpeg)
+1. Menjelajahi daftar berbagai seri laptop Lenovo.
+2. Mencari laptop berdasarkan nama menggunakan fitur pencarian.
+3. Mengurutkan daftar laptop secara alfabetis (A-Z).
+4. Melihat detail spesifikasi laptop seperti:
+   - Processor
+   - RAM
+   - Storage
+   - Graphics
+   - Display
+   - Harga
+   - Deskripsi Produk
 
 ---
 
-# 🔍 Screenshot Fitur Pencarian Data
-![Search](images/search.jpeg)
+## Screenshot Aplikasi
+
+Berikut adalah dokumentasi hasil pengujian aplikasi:
+
+### 1. Tampilan Utama
+
+| Mode Portrait | Mode Landscape |
+| :---: | :---: |
+| ![Portrait](images/portrait.png) | ![Landscape](images/landscape.png) |
 
 ---
 
-# ↕️ Screenshot Fitur Pengurutan Data
-![Sorting](images/sorting.jpeg)
+### 2. Fitur Pencarian & Pengurutan
+
+| Hasil Pencarian Data | Pengurutan (Sort A-Z) |
+| :---: | :---: |
+| ![Search](images/search.png) | ![Sort](images/sorting.png) |
 
 ---
 
-# 🐞 Screenshot Logcat Android Studio
-Berikut adalah screenshot Logcat yang menampilkan NIM pada Android Studio.
+### 3. Halaman Detail Laptop
 
-![Logcat](images/logcat.png)
+| Detail Laptop |
+| :---: |
+| ![Detail](images/portrait_detail.png) | ![Landscape](images/landscape_detail.png) |
 
 ---
 
-# ⚙️ Teknologi yang Digunakan
+## Verifikasi Logcat (NIM)
+
+Berikut adalah bukti Logcat di Android Studio yang menampilkan NIM mahasiswa.
+
+| Logcat - NIM (42430007) |
+| :---: |
+| ![Logcat](images/logcat.png) |
+
+---
+
+## Teknologi yang Digunakan
+
 - Kotlin
 - Android Studio
 - RecyclerView
+- GridLayoutManager
 - Material Design
 
 ---
 
-# 🚀 Cara Menjalankan Project
-1. Clone repository ini
-   ```bash
-   git clone https://github.com/username/nama-repository.git
+## Fitur Aplikasi
+
+- Menampilkan daftar laptop Lenovo
+- Fitur pencarian laptop
+- Fitur sorting data
+- Detail spesifikasi laptop
+- Responsive layout portrait & landscape
+- Logging menggunakan Logcat Android Studio
+
+---
+
+## Struktur Folder Screenshot
+
+```plaintext
+images/
+├── portrait.png
+├── landscape.png
+├── search.png
+├── sort.png
+├── detail.png
+└── logcat.png
