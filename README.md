@@ -31,7 +31,7 @@ Berikut adalah dokumentasi hasil pengujian aplikasi:
 
 | Mode Portrait | Mode Landscape |
 | :---: | :---: |
-| ![Portrait](images/portrait.png) | ![Landscape](images/landscape.png) |
+| ![Portrait](images/portrait.jpeg) | ![Landscape](images/landscape.jpeg) |
 
 ---
 
@@ -39,7 +39,7 @@ Berikut adalah dokumentasi hasil pengujian aplikasi:
 
 | Hasil Pencarian Data | Pengurutan (Sort A-Z) |
 | :---: | :---: |
-| ![Search](images/search.png) | ![Sort](images/sorting.png) |
+| ![Search](images/search.jpeg) | ![Sort](images/sorting.jpeg) |
 
 ---
 
@@ -47,7 +47,7 @@ Berikut adalah dokumentasi hasil pengujian aplikasi:
 
 | Detail Laptop |
 | :---: |
-| ![Detail](images/portrait_detail.png) | ![Landscape](images/landscape_detail.png) |
+| ![Detail](images/portrait_detail.jpeg) | ![Landscape](images/landscape_detail.jpeg) |
 
 ---
 
