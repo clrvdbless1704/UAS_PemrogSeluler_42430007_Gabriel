@@ -9,9 +9,13 @@ import java.text.NumberFormat
 import java.util.*
 
 class DetailActivity : AppCompatActivity() {
+
+    private val nimTag = "NIM_42430007"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         try {
+            Log.i(nimTag, "=== MEMULAI DETAIL ACTIVITY (NIM: 42430007) ===")
             setContentView(R.layout.activity_detail)
             supportActionBar?.hide()
 
@@ -39,8 +43,10 @@ class DetailActivity : AppCompatActivity() {
             val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
             findViewById<TextView>(R.id.tvDetailHarga).text = getString(R.string.detail_harga, formatRupiah.format(harga))
 
+            Log.i(nimTag, "Berhasil menampilkan detail untuk: $nama")
+
         } catch (e: Exception) {
-            Log.e("42430007", "Error Detail: ${e.message}")
+            Log.e(nimTag, "Error di DetailActivity: ${e.message}")
         }
     }
 }
