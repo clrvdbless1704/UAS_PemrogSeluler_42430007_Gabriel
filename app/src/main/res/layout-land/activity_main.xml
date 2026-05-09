@@ -36,14 +36,16 @@
             android:textColorHint="@color/accent_gray"
             android:inputType="text" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btnSearch"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="16dp"
+            android:background="@drawable/bg_search_input"
             android:backgroundTint="@color/primary_red"
-            android:text="CARI"
-            android:textColor="@color/text_white" />
+            android:src="@android:drawable/ic_menu_search"
+            android:scaleType="centerInside"
+            app:tint="@color/text_white" />
 
         <Button
             android:id="@+id/btnSort"
@@ -66,9 +68,9 @@
         android:layout_height="0dp"
         android:padding="8dp"
         android:scrollbars="vertical"
-        app:layout_constraintStart_toEndOf="@id/left_container"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/left_container"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

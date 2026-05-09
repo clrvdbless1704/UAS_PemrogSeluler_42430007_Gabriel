@@ -4,6 +4,7 @@
     <string name="btn_search">CARI</string>
     <string name="btn_sort">Urutkan A-Z</string>
     <string name="tv_result">Katalog akan muncul di sini&#8230;</string>
+    <string name="laptop_image">Gambar Laptop</string>
     <string name="desc_laptop_image">Gambar Laptop</string>
     <string name="detail_harga">Harga: %1$s</string>
     <string name="content_desc_lenovo_logo">Lenovo Logo</string>

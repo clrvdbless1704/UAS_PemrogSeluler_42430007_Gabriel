@@ -21,7 +21,8 @@
             android:layout_height="100dp"
             android:scaleType="centerInside"
             android:background="#252525"
-            android:padding="8dp"/>
+            android:padding="8dp"
+            android:contentDescription="@string/laptop_image" />
 
         <TextView
             android:id="@+id/txtNama"

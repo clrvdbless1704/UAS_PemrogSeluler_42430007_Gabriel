@@ -30,7 +30,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:hint="@string/hint_search"
+            android:hint="@string/hint_search_simple"
             android:textColorHint="@color/accent_gray"
             android:textColor="@color/text_white"
             android:paddingHorizontal="16dp"
